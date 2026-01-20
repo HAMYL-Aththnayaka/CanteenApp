@@ -61,7 +61,7 @@ PAYPAL_SECRET    = XyZ0987654321abcdefghijklmnopqrstuv
 - Localhost Connectivity: Mapping 127.0.0.1 for Windows vs 10.0.2.2 for Android was handled via a dynamic getBaseUrl() helper to ensure the app works across different platforms without manual code changes.
 
 # 🔮 Roadmap
-- [ ] Integration with a real-time notification system (Firebase).
+- [ ] Integration with a real-time notification system (MongoDB atlas).
 
 - [ ] Search and Filter functionality for the menu.
 
