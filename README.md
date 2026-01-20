@@ -1,5 +1,5 @@
 
-## University Canteen Ordering System
+## University Canteen Ordering System (uni bites) 
 
 # A Flutter-based mobile ordering system designed to streamline the experience between customers and local kitchens. This project focuses on a clean UI and a predictable state management flow using Provider.
 
