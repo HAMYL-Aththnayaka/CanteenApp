@@ -43,6 +43,17 @@
 -  Launch the app: flutter clean
 - flutter pub get
 - flutter run -d windows
+# .dotenv file
+- PORT=3000
+- mongo_URI=mongodb+srv:(create a mongodb atlas account and place its link here)
+- JWT_SECRET_KEY =random#word
+- STRIPE_SECRET_KEY="sk_test_51SDpz2LXQD7tANRwx2pz6LNERN94OnioyuwXy7hZCuwt4rNSSw6VEcjmA624GerBqmyVBbHwGNEi4Ka7AotPcRkZ00qaBsNeCo"
+
+. if anyone need the uri please contact me via whatsapp(0701160679) or linkdn
+
+#dummy credentials
+PAYPAL_CLIENT_ID = AbCdEfGhIjKlMnOpQrStUvWxYz1234567890
+PAYPAL_SECRET    = XyZ0987654321abcdefghijklmnopqrstuv
 
 # 🧠 Project Challenges & Solutions
 - 404 Route Handling: During development, we encountered several API routing issues. To solve this, I implemented a robust placeOrder function in the StoreProvider that attempts multiple URI patterns and falls - back to a simulated success state if the server is unresponsive.
