@@ -1,45 +1,71 @@
 
-## UniBites - University Canteen Ordering System
+## University Canteen Ordering System
 
+# A Flutter-based mobile ordering system designed to streamline the experience between customers and local kitchens. This project focuses on a clean UI and a predictable state management flow using Provider.
 
+# 📱 Features
+- User Accounts: Full Sign In and Sign Out flow with persistent token storage.
 
+- Smart Menu: Browse food items with real-time price calculation.
 
-UniBites is a web application designed to simplify food ordering and management for university students and staff. It provides an intuitive interface to browse menus, place orders, and manage canteen operations efficiently.
-Lets Leap in to the future
+- Cart Logic: Add, remove, and adjust quantities with a synchronized subtotal.
 
-### Features
-- Browse the daily menu with images and prices  
-- Add items to cart and place orders quickly  
-- View order history and order status  
-- Admin panel to manage menu items and orders  
-- Notifications for new orders and updates  
-- Responsive design for mobile and desktop  
+- Checkout Flow: Simple delivery form with validation.
 
-### Tech Stack
-- **Frontend:** HTML, CSS, JavaScript, React.js  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
+- Order History: A dedicated page to track previous purchases and their status.
 
-### Installation
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/HAMYL-Aththnayaka/unibites-project.git ```
-   
-2. Install dependencies:
-  npm install
-3. Start the server:
- 
-4. Open the app in your browser at http://localhost:xxxx
+- Fail-Safe Mode: If the backend API isn't reachable or a route is missing, the app uses a simulation layer to complete the order locally. This ensures the UI flow can always be demonstrated.
 
-# Future Enhancements
+# 🛠️ Tech Stack
+- Frontend: Flutter & Dart
 
-- Payment integration
+- State Management: Provider
 
-- Real-time order tracking
+- Networking: Dio (with custom interceptors for auth tokens)
 
-- User ratings and feedback for menu items
-# Sample Output :
-<img width="1900" height="1008" alt="Project" src="https://github.com/user-attachments/assets/e01ea097-2a58-4b79-9449-2bd8beb4c449" />
+- Backend: Node.js / Express (running on localhost:3000)
+
+- Database: MongoDB
+
+# 🏃‍♂️ Getting Started
+- 1. Backend Setup
+-   Navigate to the backend directory.
+
+-   Install dependencies: npm install.
+
+-  Start the server: npm start.
+
+- 2. Frontend Setup
+-    Ensure your Flutter environment is set up for Windows or Android.
+
+- Run flutter pub get.
+
+-  Launch the app: flutter clean
+- flutter pub get
+- flutter run -d windows
+
+# 🧠 Project Challenges & Solutions
+- 404 Route Handling: During development, we encountered several API routing issues. To solve this, I implemented a robust placeOrder function in the StoreProvider that attempts multiple URI patterns and falls - back to a simulated success state if the server is unresponsive.
+
+- Localhost Connectivity: Mapping 127.0.0.1 for Windows vs 10.0.2.2 for Android was handled via a dynamic getBaseUrl() helper to ensure the app works across different platforms without manual code changes.
+
+# 🔮 Roadmap
+- [ ] Integration with a real-time notification system (Firebase).
+
+- [ ] Search and Filter functionality for the menu.
+
+- [ ] User profile editing (Update address/phone).
+
+# Sample Output
+
+<img width="380" height="875" alt="image" src="https://github.com/user-attachments/assets/10080f35-6d11-42b4-bcec-d8848cbac3cc" />
+
+<img width="372" height="877" alt="image" src="https://github.com/user-attachments/assets/9bbd72fd-1ff4-4033-a657-3ee2bd0f98d2" />
+
+<img width="386" height="892" alt="image" src="https://github.com/user-attachments/assets/44684feb-84b2-4eac-af7f-4c43dd6762bf" />
+
+<img width="375" height="896" alt="image" src="https://github.com/user-attachments/assets/f94ebdd3-322f-485f-b768-f5fc5d0eef48" />
+
 
 
 # Connect with Me
