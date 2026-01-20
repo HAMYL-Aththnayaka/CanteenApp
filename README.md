@@ -51,9 +51,6 @@
 
 . if anyone need the uri please contact me via whatsapp(0701160679) or linkdn
 
-#dummy credentials
-PAYPAL_CLIENT_ID = AbCdEfGhIjKlMnOpQrStUvWxYz1234567890
-PAYPAL_SECRET    = XyZ0987654321abcdefghijklmnopqrstuv
 
 # 🧠 Project Challenges & Solutions
 - 404 Route Handling: During development, we encountered several API routing issues. To solve this, I implemented a robust placeOrder function in the StoreProvider that attempts multiple URI patterns and falls - back to a simulated success state if the server is unresponsive.
